@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@keyframes moveLine {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+.line {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: none;
+}
+
+.hover-trigger:hover .line {
+    animation-name: moveLine;
+}
+
+
+
+ /* .bg-custom {
+    background-image: url('./Images/DALL·E\ 2023-12-13\ 11.32.24\ -\ A\ monochrome\ portrait\ of\ a\ stylish\ man\ with\ a\ beard\ and\ sunglasses\,\ in\ a\ moody\,\ low-key\ lighting.\ The\ man\ is\ wearing\ a\ high-collar\ jacket\ or\ sweater\,\ .png'); 
+    background-size:  contain; 
+    background-repeat: no-repeat; 
+ } */
+
+
+
+ .image-fade {
+    position: relative;
+  }
+  
+  .image-fade::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, black);
+    background: linear-gradient(to left, transparent, black);
+  
+  }
+  
+ 
+ 
